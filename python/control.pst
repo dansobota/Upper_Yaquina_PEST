@@ -1,0 +1,807 @@
+pcf
+* control data
+restart estimation
+    89  668  15  0  16
+     1     1   single   point   1   0   0
+5.0   2.0    0.3    0.03    10  999
+5.0   5.0   1.0e-3
+0.1   noaui
+  25  .005  4   4  .005   4
+1    1    1
+* parameter groups
+CNP       relative     1.0000E-02  1.0000E-03  switch      2.000      parabolic
+PHSYN     relative     1.0000E-02  1.0000E-03  switch      2.000      parabolic
+FCBOD     relative     1.0000E-02  1.0000E-03  switch      2.000      parabolic
+ORGN      relative     1.0000E-02  1.0000E-03  switch      2.000      parabolic
+NH4N      relative     1.0000E-02  1.0000E-03  switch      2.000      parabolic
+NO3N      relative     1.0000E-02  1.0000E-03  switch      2.000      parabolic
+ORGP      relative     1.0000E-02  1.0000E-03  switch      2.000      parabolic
+PO4P      relative     1.0000E-02  1.0000E-03  switch      2.000      parabolic
+PHYT      relative     1.0000E-02  1.0000E-07  switch      2.000      parabolic
+BASL      relative     1.0000E-02  1.0000E-07  switch      2.000      parabolic
+DETR      relative     1.0000E-02  1.0000E-03  switch      2.000      parabolic
+REAER     relative     1.0000E-02  1.0000E-03  switch      2.000      parabolic
+MANN      relative     1.0000E-02  1.0000E-03  switch      2.000      parabolic
+ALGAE     relative     1.0000E-02  1.0000E-03  switch      2.000      parabolic
+SOD       relative     1.0000E-02  1.0000E-03  switch      2.000      parabolic
+* parameter data
+Carb             log    factor    4.00E+01    3.00E+01    6.00E+01    CNP      1.000    0.000    1
+Nitr             log    factor    7.00E+00    5.00E+00    9.00E+00    CNP      1.000    0.000    1
+Phos             log    factor    1.00E+00    5.00E-01    2.00E+00    CNP      1.000    0.000    1
+PhotoqN          log    factor    1.40E+00    1.20E+00    1.80E+00    PHSYN    1.000    0.000    1
+Rq               log    factor    9.20E-01    8.50E-01    1.00E+00    PHSYN    1.000    0.000    1
+fCBODox          log    factor    2.50E+00    1.00E-05    5.00E+00    FCBOD    1.000    0.000    1
+fCBODtemp        log    factor    1.03E+00    1.00E+00    1.07E+00    FCBOD    1.000    0.000    1
+ONhyd            log    factor    2.00E-01    5.00E-02    3.00E-01    ORGN     1.000    0.000    1
+ONtemp           log    factor    1.02E+00    1.00E+00    1.07E+00    ORGN     1.000    0.000    1
+ONsv             log    factor    1.50E+00    5.00E-02    3.00E+00    ORGN     1.000    0.000    1
+NH4nit           log    factor    1.50E+00    5.00E-03    3.00E+00    NH4N     1.000    0.000    1
+NH4temp          log    factor    1.02E+00    1.00E+00    1.07E+00    NH4N     1.000    0.000    1
+DNF              log    factor    1.00E+00    1.00E-05    2.00E+00    NO3N     1.000    0.000    1
+DNFtemp          log    factor    1.02E+00    1.00E+00    1.07E+00    NO3N     1.000    0.000    1
+DNFsed           log    factor    5.00E-01    1.00E-05    1.00E+00    NO3N     1.000    0.000    1
+DNFsed_temp      log    factor    1.02E+00    1.00E+00    1.07E+00    NO3N     1.000    0.000    1
+OPhyd            log    factor    2.00E-01    5.00E-02    3.00E-01    ORGP     1.000    0.000    1
+OPtemp           log    factor    1.02E+00    1.00E+00    1.07E+00    ORGP     1.000    0.000    1
+OPsv             log    factor    1.00E+00    5.00E-02    2.00E+00    ORGP     1.000    0.000    1
+PO4sv            log    factor    1.00E+00    1.00E-05    2.00E+00    PO4P     1.000    0.000    1
+PO4sedox         log    factor    1.00E+00    1.00E-05    2.00E+00    PO4P     1.000    0.000    1
+Phytgr           log    factor    2.00E+00    1.50E+00    3.00E+00    PHYT     1.000    0.000    1
+Phytgr_temp      log    factor    1.02E+00    1.00E+00    1.07E+00    PHYT     1.000    0.000    1
+Phytresp         log    factor    2.50E-01    5.00E-02    5.00E-01    PHYT     1.000    0.000    1
+Phytresp_tmp     log    factor    1.02E+00    1.00E+00    1.07E+00    PHYT     1.000    0.000    1
+Phytdr           log    factor    5.00E-01    1.00E-05    1.00E+00    PHYT     1.000    0.000    1
+Phytdr_tmp       log    factor    1.02E+00    1.00E+00    1.07E+00    PHYT     1.000    0.000    1
+Phytnitr         log    factor    1.70E+01    1.00E+01    2.50E+01    PHYT     1.000    0.000    1
+Phytphos         log    factor    2.00E+00    1.00E+00    5.00E+00    PHYT     1.000    0.000    1
+PhytDIC          log    factor    1.30E-05    1.30E-06    1.30E-04    PHYT     1.000    0.000    1
+Phytlight        log    factor    7.00E+01    4.00E+01    1.10E+02    PHYT     1.000    0.000    1
+PhytNH4          log    factor    2.20E+01    1.50E+01    3.00E+01    PHYT     1.000    0.000    1
+Phytsv           log    factor    1.00E+00    5.00E-02    2.00E+00    PHYT     1.000    0.000    1
+BPgr             log    factor    1.00E+02    5.00E+01    2.00E+02    BASL     1.000    0.000    1
+BPgr_temp        log    factor    1.02E+00    1.00E+00    1.07E+00    BASL     1.000    0.000    1
+BPresp           log    factor    1.00E-01    2.00E-02    2.00E-01    BASL     1.000    0.000    1
+BPphresp         log    factor    3.00E-01    1.00E-05    6.00E-01    BASL     1.000    0.000    1
+BPpHresp_tmp     log    factor    1.02E+00    1.00E+00    1.07E+00    BASL     1.000    0.000    1
+BPexc            log    factor    2.50E-01    1.00E-05    5.00E-01    BASL     1.000    0.000    1
+BPexc_temp       log    factor    1.02E+00    1.00E+00    1.07E+00    BASL     1.000    0.000    1
+BPdr             log    factor    2.00E-01    1.00E-05    5.00E-01    BASL     1.000    0.000    1
+BPcc             log    factor    1.00E+02    5.00E+01    2.00E+02    BASL     1.000    0.000    1
+BPdr_temp        log    factor    1.02E+00    1.00E+00    1.07E+00    BASL     1.000    0.000    1
+BPnitrk          log    factor    3.00E+02    1.00E+02    5.00E+02    BASL     1.000    0.000    1
+BPphosk          log    factor    7.50E+01    2.50E+01    1.00E+02    BASL     1.000    0.000    1
+BPdick           log    factor    1.30E-05    1.30E-06    1.30E-04    BASL     1.000    0.000    1
+BPlightk         log    factor    7.00E+01    4.00E+01    1.10E+02    BASL     1.000    0.000    1
+BPnh4            log    factor    2.20E+01    1.50E+01    3.00E+01    BASL     1.000    0.000    1
+BPnitrsq         log    factor    1.60E+01    7.20E+00    3.60E+01    BASL     1.000    0.000    1
+BPphossq         log    factor    3.00E+00    1.00E+00    5.00E+00    BASL     1.000    0.000    1
+BPnitrmu         log    factor    1.00E+03    3.50E+02    1.50E+03    BASL     1.000    0.000    1
+BPphosmu         log    factor    1.00E+02    5.00E+01    2.00E+02    BASL     1.000    0.000    1
+BPnitrik         log    factor    3.00E+00    1.05E+00    5.00E+00    BASL     1.000    0.000    1
+BPphosik         log    factor    3.00E+00    1.05E+00    5.00E+00    BASL     1.000    0.000    1
+BPnitrwc         log    factor    5.00E-01    1.00E-05    1.00E+00    BASL     1.000    0.000    1
+BPphoswc         log    factor    5.00E-01    1.00E-05    1.00E+00    BASL     1.000    0.000    1
+BPsf             log    factor    5.00E-02    1.00E-05    1.00E-01    BASL     1.000    0.000    1
+BPexps           log    factor    1.00E+00    1.00E-05    2.00E+00    BASL     1.000    0.000    1
+BPbios           log    factor    5.00E+00    1.00E-05    1.00E+01    BASL     1.000    0.000    1
+Detdr            log    factor    2.00E-01    5.00E-02    5.00E-01    DETR     1.000    0.000    1
+Detdrtemp        log    factor    1.02E+00    1.00E+00    1.07E+00    DETR     1.000    0.000    1
+Detsv            log    factor    1.05E+00    5.00E-02    2.00E+00    DETR     1.000    0.000    1
+ReaerA           log    factor    4.00E+00    3.00E+00    6.00E+00    REAER    1.000    0.000    1
+ReaerB           log    factor    7.00E-01    5.00E-01    1.00E+00    REAER    1.000    0.000    1
+ReaerC           none   factor   -1.60E+00   -1.85E+00   -1.50E+00    REAER    1.000    0.000    1
+mann1            log    factor    5.00E-02    2.00E-02    9.00E-01    MANN     1.000    0.000    1
+mann2            log    factor    5.00E-02    2.00E-02    9.00E-01    MANN     1.000    0.000    1
+mann3            log    factor    5.00E-02    2.00E-02    9.00E-01    MANN     1.000    0.000    1
+mann4            log    factor    5.00E-02    2.00E-02    9.00E-01    MANN     1.000    0.000    1
+mann5            log    factor    5.00E-02    2.00E-02    9.00E-01    MANN     1.000    0.000    1
+mann6            log    factor    5.00E-02    2.00E-02    9.00E-01    MANN     1.000    0.000    1
+mann7            log    factor    5.00E-02    2.00E-02    9.00E-01    MANN     1.000    0.000    1
+mann8            log    factor    5.00E-02    2.00E-02    9.00E-01    MANN     1.000    0.000    1
+algae1           log    factor    5.00E-01    1.00E-07    1.00E+00    ALGAE    1.000    0.000    1
+algae2           log    factor    5.00E-01    1.00E-07    1.00E+00    ALGAE    1.000    0.000    1
+algae3           log    factor    5.00E-01    1.00E-07    1.00E+00    ALGAE    1.000    0.000    1
+algae4           log    factor    5.00E-01    1.00E-07    1.00E+00    ALGAE    1.000    0.000    1
+algae5           log    factor    5.00E-01    1.00E-07    1.00E+00    ALGAE    1.000    0.000    1
+algae6           log    factor    5.00E-01    1.00E-07    1.00E+00    ALGAE    1.000    0.000    1
+algae7           log    factor    5.00E-01    1.00E-07    1.00E+00    ALGAE    1.000    0.000    1
+algae8           log    factor    5.00E-01    1.00E-07    1.00E+00    ALGAE    1.000    0.000    1
+sod1             log    factor    5.00E-01    1.00E-07    1.00E+00    SOD      1.000    0.000    1
+sod2             log    factor    5.00E-01    1.00E-07    1.00E+00    SOD      1.000    0.000    1
+sod3             log    factor    5.00E-01    1.00E-07    1.00E+00    SOD      1.000    0.000    1
+sod4             log    factor    5.00E-01    1.00E-07    1.00E+00    SOD      1.000    0.000    1
+sod5             log    factor    5.00E-01    1.00E-07    1.00E+00    SOD      1.000    0.000    1
+sod6             log    factor    5.00E-01    1.00E-07    1.00E+00    SOD      1.000    0.000    1
+sod7             log    factor    5.00E-01    1.00E-07    1.00E+00    SOD      1.000    0.000    1
+sod8             log    factor    5.00E-01    1.00E-07    1.00E+00    SOD      1.000    0.000    1
+* observation groups
+flow
+fcob
+orgn
+nh4
+no3
+orgp
+inorgp
+doave
+domin
+domax
+tempave
+tempmin
+tempmax
+pHave
+pHmin
+pHmax
+* observation data
+ flow05               9.0000000E-02     1.0    flow
+ flow08               0.4370000         1.0    flow
+ fcob08                1.387000         1.0    fcob
+ fcob06                1.216667         1.0    fcob
+ fcob05               0.9689091         1.0    fcob
+ orgn08               0.2015000         1.0    orgn
+ orgn06               0.1825833         1.0    orgn
+ orgn05               0.1650833         1.0    orgn
+ nh408                1.5000000E-02     1.0    nh4
+ nh406                2.4500000E-02     1.0    nh4
+ nh405                1.7750000E-02     1.0    nh4
+ no308                0.2872500         1.0    no3
+ no306                0.2907500         1.0    no3
+ no305                0.3342500         1.0    no3
+ orgp08               2.1083333E-02     1.0    orgp
+ orgp06               1.4250000E-02     1.0    orgp
+ orgp05               1.3000000E-02     1.0    orgp
+ inorgp08             1.0583333E-02     1.0    inorgp
+ inorgp06             1.7416667E-02     1.0    inorgp
+ inorgp05             1.9500000E-02     1.0    inorgp
+ doave0500             8.072500         1.0    doave
+ doave0600             7.741250         1.0    doave
+ doave0800             8.751250         1.0    doave
+ doave0501             8.032500         1.0    doave
+ doave0601             7.597500         1.0    doave
+ doave0801             8.652500         1.0    doave
+ doave0502             8.002500         1.0    doave
+ doave0602             7.505000         1.0    doave
+ doave0802             8.495000         1.0    doave
+ doave0503             7.997500         1.0    doave
+ doave0603             7.436250         1.0    doave
+ doave0803             8.307500         1.0    doave
+ doave0504             7.992500         1.0    doave
+ doave0604             7.386250         1.0    doave
+ doave0804             8.240000         1.0    doave
+ doave0505             8.018750         1.0    doave
+ doave0605             7.355000         1.0    doave
+ doave0805             8.108750         1.0    doave
+ doave0506             8.070000         1.0    doave
+ doave0606             7.337500         1.0    doave
+ doave0806             8.080000         1.0    doave
+ doave0507             8.245000         1.0    doave
+ doave0607             7.357500         1.0    doave
+ doave0807             8.027500         1.0    doave
+ doave0508             8.595000         1.0    doave
+ doave0608             7.438750         1.0    doave
+ doave0808             8.057500         1.0    doave
+ doave0509             9.048750         1.0    doave
+ doave0609             7.632500         1.0    doave
+ doave0809             8.166250         1.0    doave
+ doave0510             9.437500         1.0    doave
+ doave0610             7.898750         1.0    doave
+ doave0810             8.397500         1.0    doave
+ doave0511             9.598750         1.0    doave
+ doave0611             8.175000         1.0    doave
+ doave0811             8.557500         1.0    doave
+ doave0512             9.640000         1.0    doave
+ doave0612             8.500000         1.0    doave
+ doave0812             9.152500         1.0    doave
+ doave0513             9.787500         1.0    doave
+ doave0613             8.735000         1.0    doave
+ doave0813             9.592500         1.0    doave
+ doave0514             9.860000         1.0    doave
+ doave0614             8.947500         1.0    doave
+ doave0814             9.767500         1.0    doave
+ doave0515             9.817500         1.0    doave
+ doave0615             9.117500         1.0    doave
+ doave0815             9.917500         1.0    doave
+ doave0516             9.692500         1.0    doave
+ doave0616             9.190000         1.0    doave
+ doave0816             9.837500         1.0    doave
+ doave0517             9.495000         1.0    doave
+ doave0617             9.162500         1.0    doave
+ doave0817             9.802500         1.0    doave
+ doave0518             9.165000         1.0    doave
+ doave0618             9.035000         1.0    doave
+ doave0818             9.732500         1.0    doave
+ doave0519             8.777500         1.0    doave
+ doave0619             8.802500         1.0    doave
+ doave0819             9.565000         1.0    doave
+ doave0520             8.522500         1.0    doave
+ doave0620             8.510000         1.0    doave
+ doave0820             9.305000         1.0    doave
+ doave0521             8.295000         1.0    doave
+ doave0621             8.237500         1.0    doave
+ doave0821             9.145000         1.0    doave
+ doave0522             8.122500         1.0    doave
+ doave0622             7.980000         1.0    doave
+ doave0822             8.897500         1.0    doave
+ doave0523             8.015000         1.0    doave
+ doave0623             7.747500         1.0    doave
+ doave0823             8.600000         1.0    doave
+ domin0500             7.940000         1.0    domin
+ domin0600             7.490000         1.0    domin
+ domin0800             8.590000         1.0    domin
+ domin0501             7.910000         1.0    domin
+ domin0601             7.360000         1.0    domin
+ domin0801             8.500000         1.0    domin
+ domin0502             7.890000         1.0    domin
+ domin0602             7.290000         1.0    domin
+ domin0802             8.430000         1.0    domin
+ domin0503             7.910000         1.0    domin
+ domin0603             7.240000         1.0    domin
+ domin0803             8.170000         1.0    domin
+ domin0504             7.920000         1.0    domin
+ domin0604             7.210000         1.0    domin
+ domin0804             8.130000         1.0    domin
+ domin0505             7.940000         1.0    domin
+ domin0605             7.200000         1.0    domin
+ domin0805             8.010000         1.0    domin
+ domin0506             8.000000         1.0    domin
+ domin0606             7.180000         1.0    domin
+ domin0806             7.970000         1.0    domin
+ domin0507             8.120000         1.0    domin
+ domin0607             7.200000         1.0    domin
+ domin0807             7.930000         1.0    domin
+ domin0508             8.440000         1.0    domin
+ domin0608             7.290000         1.0    domin
+ domin0808             7.930000         1.0    domin
+ domin0509             8.800000         1.0    domin
+ domin0609             7.440000         1.0    domin
+ domin0809             8.010000         1.0    domin
+ domin0510             9.240000         1.0    domin
+ domin0610             7.610000         1.0    domin
+ domin0810             8.130000         1.0    domin
+ domin0511             9.440000         1.0    domin
+ domin0611             7.990000         1.0    domin
+ domin0811             8.300000         1.0    domin
+ domin0512             9.550000         1.0    domin
+ domin0612             8.390000         1.0    domin
+ domin0812             8.970000         1.0    domin
+ domin0513             9.750000         1.0    domin
+ domin0613             8.650000         1.0    domin
+ domin0813             9.370000         1.0    domin
+ domin0514             9.850000         1.0    domin
+ domin0614             8.880000         1.0    domin
+ domin0814             9.640000         1.0    domin
+ domin0515             9.790000         1.0    domin
+ domin0615             9.070000         1.0    domin
+ domin0815             9.860000         1.0    domin
+ domin0516             9.630000         1.0    domin
+ domin0616             9.170000         1.0    domin
+ domin0816             9.800000         1.0    domin
+ domin0517             9.400000         1.0    domin
+ domin0617             9.110000         1.0    domin
+ domin0817             9.760000         1.0    domin
+ domin0518             9.030000         1.0    domin
+ domin0618             8.970000         1.0    domin
+ domin0818             9.710000         1.0    domin
+ domin0519             8.670000         1.0    domin
+ domin0619             8.710000         1.0    domin
+ domin0819             9.440000         1.0    domin
+ domin0520             8.440000         1.0    domin
+ domin0620             8.400000         1.0    domin
+ domin0820             9.180000         1.0    domin
+ domin0521             8.220000         1.0    domin
+ domin0621             8.110000         1.0    domin
+ domin0821             9.080000         1.0    domin
+ domin0522             8.070000         1.0    domin
+ domin0622             7.880000         1.0    domin
+ domin0822             8.760000         1.0    domin
+ domin0523             7.990000         1.0    domin
+ domin0623             7.670000         1.0    domin
+ domin0823             8.560000         1.0    domin
+ domax0500             8.210000         1.0    domax
+ domax0600             8.000000         1.0    domax
+ domax0800             8.890000         1.0    domax
+ domax0501             8.180000         1.0    domax
+ domax0601             7.820000         1.0    domax
+ domax0801             8.830000         1.0    domax
+ domax0502             8.120000         1.0    domax
+ domax0602             7.720000         1.0    domax
+ domax0802             8.570000         1.0    domax
+ domax0503             8.100000         1.0    domax
+ domax0603             7.630000         1.0    domax
+ domax0803             8.430000         1.0    domax
+ domax0504             8.060000         1.0    domax
+ domax0604             7.570000         1.0    domax
+ domax0804             8.300000         1.0    domax
+ domax0505             8.080000         1.0    domax
+ domax0605             7.520000         1.0    domax
+ domax0805             8.240000         1.0    domax
+ domax0506             8.140000         1.0    domax
+ domax0606             7.490000         1.0    domax
+ domax0806             8.150000         1.0    domax
+ domax0507             8.360000         1.0    domax
+ domax0607             7.510000         1.0    domax
+ domax0807             8.120000         1.0    domax
+ domax0508             8.820000         1.0    domax
+ domax0608             7.630000         1.0    domax
+ domax0808             8.190000         1.0    domax
+ domax0509             9.280000         1.0    domax
+ domax0609             7.770000         1.0    domax
+ domax0809             8.410000         1.0    domax
+ domax0510             9.650000         1.0    domax
+ domax0610             8.100000         1.0    domax
+ domax0810             8.640000         1.0    domax
+ domax0511             9.730000         1.0    domax
+ domax0611             8.420000         1.0    domax
+ domax0811             8.850000         1.0    domax
+ domax0512             9.720000         1.0    domax
+ domax0612             8.590000         1.0    domax
+ domax0812             9.300000         1.0    domax
+ domax0513             9.830000         1.0    domax
+ domax0613             8.830000         1.0    domax
+ domax0813             9.870000         1.0    domax
+ domax0514             9.870000         1.0    domax
+ domax0614             9.010000         1.0    domax
+ domax0814             9.900000         1.0    domax
+ domax0515             9.850000         1.0    domax
+ domax0615             9.160000         1.0    domax
+ domax0815             10.00000         1.0    domax
+ domax0516             9.750000         1.0    domax
+ domax0616             9.210000         1.0    domax
+ domax0816             9.880000         1.0    domax
+ domax0517             9.590000         1.0    domax
+ domax0617             9.190000         1.0    domax
+ domax0817             9.820000         1.0    domax
+ domax0518             9.320000         1.0    domax
+ domax0618             9.080000         1.0    domax
+ domax0818             9.770000         1.0    domax
+ domax0519             8.910000         1.0    domax
+ domax0619             8.910000         1.0    domax
+ domax0819             9.690000         1.0    domax
+ domax0520             8.600000         1.0    domax
+ domax0620             8.590000         1.0    domax
+ domax0820             9.370000         1.0    domax
+ domax0521             8.370000         1.0    domax
+ domax0621             8.350000         1.0    domax
+ domax0821             9.190000         1.0    domax
+ domax0522             8.170000         1.0    domax
+ domax0622             8.080000         1.0    domax
+ domax0822             8.990000         1.0    domax
+ domax0523             8.050000         1.0    domax
+ domax0623             7.820000         1.0    domax
+ domax0823             8.640000         1.0    domax
+ tempave0500           20.04025         1.0    tempave
+ tempave0600           20.80500         1.0    tempave
+ tempave0800           19.69987         1.0    tempave
+ tempave0501           19.85225         1.0    tempave
+ tempave0601           20.60375         1.0    tempave
+ tempave0801           19.53950         1.0    tempave
+ tempave0502           19.66738         1.0    tempave
+ tempave0602           20.41625         1.0    tempave
+ tempave0802           19.39613         1.0    tempave
+ tempave0503           19.46788         1.0    tempave
+ tempave0603           20.24125         1.0    tempave
+ tempave0803           19.36788         1.0    tempave
+ tempave0504           19.24625         1.0    tempave
+ tempave0604           20.07750         1.0    tempave
+ tempave0804           19.17250         1.0    tempave
+ tempave0505           19.02250         1.0    tempave
+ tempave0605           19.89625         1.0    tempave
+ tempave0805           19.12450         1.0    tempave
+ tempave0506           18.80213         1.0    tempave
+ tempave0606           19.71000         1.0    tempave
+ tempave0806           18.96963         1.0    tempave
+ tempave0507           18.60363         1.0    tempave
+ tempave0607           19.52875         1.0    tempave
+ tempave0807           18.88088         1.0    tempave
+ tempave0508           18.45475         1.0    tempave
+ tempave0608           19.39000         1.0    tempave
+ tempave0808           18.80725         1.0    tempave
+ tempave0509           18.40063         1.0    tempave
+ tempave0609           19.31625         1.0    tempave
+ tempave0809           18.81625         1.0    tempave
+ tempave0510           18.46863         1.0    tempave
+ tempave0610           19.34000         1.0    tempave
+ tempave0810           18.89300         1.0    tempave
+ tempave0511           18.93525         1.0    tempave
+ tempave0611           19.61000         1.0    tempave
+ tempave0811           19.11388         1.0    tempave
+ tempave0512           19.75200         1.0    tempave
+ tempave0612           19.90500         1.0    tempave
+ tempave0812           19.44925         1.0    tempave
+ tempave0513           20.87250         1.0    tempave
+ tempave0613           20.47500         1.0    tempave
+ tempave0813           19.65250         1.0    tempave
+ tempave0514           21.85800         1.0    tempave
+ tempave0614           21.17250         1.0    tempave
+ tempave0814           20.11750         1.0    tempave
+ tempave0515           22.32975         1.0    tempave
+ tempave0615           21.84500         1.0    tempave
+ tempave0815           20.49075         1.0    tempave
+ tempave0516           22.24375         1.0    tempave
+ tempave0616           22.24250         1.0    tempave
+ tempave0816           20.65350         1.0    tempave
+ tempave0517           21.85425         1.0    tempave
+ tempave0617           22.27000         1.0    tempave
+ tempave0817           20.71175         1.0    tempave
+ tempave0518           21.46050         1.0    tempave
+ tempave0618           22.10500         1.0    tempave
+ tempave0818           20.67175         1.0    tempave
+ tempave0519           21.19925         1.0    tempave
+ tempave0619           21.93000         1.0    tempave
+ tempave0819           20.59050         1.0    tempave
+ tempave0520           21.08800         1.0    tempave
+ tempave0620           21.83000         1.0    tempave
+ tempave0820           20.39925         1.0    tempave
+ tempave0521           20.93950         1.0    tempave
+ tempave0621           21.72500         1.0    tempave
+ tempave0821           20.22950         1.0    tempave
+ tempave0522           20.74150         1.0    tempave
+ tempave0622           21.54750         1.0    tempave
+ tempave0822           20.14700         1.0    tempave
+ tempave0523           20.52875         1.0    tempave
+ tempave0623           21.35500         1.0    tempave
+ tempave0823           20.17900         1.0    tempave
+ tempmin0500           19.68200         1.0    tempmin
+ tempmin0600           20.40000         1.0    tempmin
+ tempmin0800           19.33100         1.0    tempmin
+ tempmin0501           19.52100         1.0    tempmin
+ tempmin0601           20.21000         1.0    tempmin
+ tempmin0801           19.27300         1.0    tempmin
+ tempmin0502           19.37400         1.0    tempmin
+ tempmin0602           20.09000         1.0    tempmin
+ tempmin0802           19.18600         1.0    tempmin
+ tempmin0503           19.20400         1.0    tempmin
+ tempmin0603           19.93000         1.0    tempmin
+ tempmin0803           19.17600         1.0    tempmin
+ tempmin0504           19.04400         1.0    tempmin
+ tempmin0604           19.80000         1.0    tempmin
+ tempmin0804           18.98300         1.0    tempmin
+ tempmin0505           18.86200         1.0    tempmin
+ tempmin0605           19.64000         1.0    tempmin
+ tempmin0805           18.87700         1.0    tempmin
+ tempmin0506           18.68600         1.0    tempmin
+ tempmin0606           19.44000         1.0    tempmin
+ tempmin0806           18.80800         1.0    tempmin
+ tempmin0507           18.52700         1.0    tempmin
+ tempmin0607           19.29000         1.0    tempmin
+ tempmin0807           18.68200         1.0    tempmin
+ tempmin0508           18.41300         1.0    tempmin
+ tempmin0608           19.20000         1.0    tempmin
+ tempmin0808           18.63200         1.0    tempmin
+ tempmin0509           18.39100         1.0    tempmin
+ tempmin0609           19.18000         1.0    tempmin
+ tempmin0809           18.65300         1.0    tempmin
+ tempmin0510           18.40000         1.0    tempmin
+ tempmin0610           19.19000         1.0    tempmin
+ tempmin0810           18.77200         1.0    tempmin
+ tempmin0511           18.71000         1.0    tempmin
+ tempmin0611           19.36000         1.0    tempmin
+ tempmin0811           18.96400         1.0    tempmin
+ tempmin0512           19.37300         1.0    tempmin
+ tempmin0612           19.71000         1.0    tempmin
+ tempmin0812           19.28500         1.0    tempmin
+ tempmin0513           20.44500         1.0    tempmin
+ tempmin0613           20.25000         1.0    tempmin
+ tempmin0813           19.60800         1.0    tempmin
+ tempmin0514           21.54700         1.0    tempmin
+ tempmin0614           20.90000         1.0    tempmin
+ tempmin0814           19.99200         1.0    tempmin
+ tempmin0515           22.26000         1.0    tempmin
+ tempmin0615           21.65000         1.0    tempmin
+ tempmin0815           20.35300         1.0    tempmin
+ tempmin0516           22.12100         1.0    tempmin
+ tempmin0616           22.16000         1.0    tempmin
+ tempmin0816           20.57400         1.0    tempmin
+ tempmin0517           21.70500         1.0    tempmin
+ tempmin0617           22.24000         1.0    tempmin
+ tempmin0817           20.64300         1.0    tempmin
+ tempmin0518           21.34400         1.0    tempmin
+ tempmin0618           22.04000         1.0    tempmin
+ tempmin0818           20.63200         1.0    tempmin
+ tempmin0519           21.15500         1.0    tempmin
+ tempmin0619           21.88000         1.0    tempmin
+ tempmin0819           20.49400         1.0    tempmin
+ tempmin0520           21.03000         1.0    tempmin
+ tempmin0620           21.81000         1.0    tempmin
+ tempmin0820           20.32300         1.0    tempmin
+ tempmin0521           20.87800         1.0    tempmin
+ tempmin0621           21.66000         1.0    tempmin
+ tempmin0821           20.20600         1.0    tempmin
+ tempmin0522           20.65700         1.0    tempmin
+ tempmin0622           21.46000         1.0    tempmin
+ tempmin0822           20.03500         1.0    tempmin
+ tempmin0523           20.45400         1.0    tempmin
+ tempmin0623           21.26000         1.0    tempmin
+ tempmin0823           20.08300         1.0    tempmin
+ tempmax0500           20.39900         1.0    tempmax
+ tempmax0600           21.22000         1.0    tempmax
+ tempmax0800           20.09500         1.0    tempmax
+ tempmax0501           20.21000         1.0    tempmax
+ tempmax0601           21.00000         1.0    tempmax
+ tempmax0801           19.90100         1.0    tempmax
+ tempmax0502           19.99100         1.0    tempmax
+ tempmax0602           20.78000         1.0    tempmax
+ tempmax0802           19.58800         1.0    tempmax
+ tempmax0503           19.76200         1.0    tempmax
+ tempmax0603           20.58000         1.0    tempmax
+ tempmax0803           19.55700         1.0    tempmax
+ tempmax0504           19.49200         1.0    tempmax
+ tempmax0604           20.38000         1.0    tempmax
+ tempmax0804           19.41000         1.0    tempmax
+ tempmax0505           19.21500         1.0    tempmax
+ tempmax0605           20.19000         1.0    tempmax
+ tempmax0805           19.30200         1.0    tempmax
+ tempmax0506           18.95100         1.0    tempmax
+ tempmax0606           19.95000         1.0    tempmax
+ tempmax0806           19.12900         1.0    tempmax
+ tempmax0507           18.70300         1.0    tempmax
+ tempmax0607           19.76000         1.0    tempmax
+ tempmax0807           19.10200         1.0    tempmax
+ tempmax0508           18.50000         1.0    tempmax
+ tempmax0608           19.58000         1.0    tempmax
+ tempmax0808           18.98400         1.0    tempmax
+ tempmax0509           18.41600         1.0    tempmax
+ tempmax0609           19.48000         1.0    tempmax
+ tempmax0809           18.99500         1.0    tempmax
+ tempmax0510           18.59600         1.0    tempmax
+ tempmax0610           19.51000         1.0    tempmax
+ tempmax0810           19.01700         1.0    tempmax
+ tempmax0511           19.17300         1.0    tempmax
+ tempmax0611           19.87000         1.0    tempmax
+ tempmax0811           19.33900         1.0    tempmax
+ tempmax0512           20.17700         1.0    tempmax
+ tempmax0612           20.10000         1.0    tempmax
+ tempmax0812           19.62100         1.0    tempmax
+ tempmax0513           21.28300         1.0    tempmax
+ tempmax0613           20.74000         1.0    tempmax
+ tempmax0813           19.67700         1.0    tempmax
+ tempmax0514           22.14000         1.0    tempmax
+ tempmax0614           21.44000         1.0    tempmax
+ tempmax0814           20.24100         1.0    tempmax
+ tempmax0515           22.38400         1.0    tempmax
+ tempmax0615           22.03000         1.0    tempmax
+ tempmax0815           20.60800         1.0    tempmax
+ tempmax0516           22.35800         1.0    tempmax
+ tempmax0616           22.31000         1.0    tempmax
+ tempmax0816           20.76500         1.0    tempmax
+ tempmax0517           21.99500         1.0    tempmax
+ tempmax0617           22.30000         1.0    tempmax
+ tempmax0817           20.76900         1.0    tempmax
+ tempmax0518           21.59900         1.0    tempmax
+ tempmax0618           22.16000         1.0    tempmax
+ tempmax0818           20.74100         1.0    tempmax
+ tempmax0519           21.26100         1.0    tempmax
+ tempmax0619           21.99000         1.0    tempmax
+ tempmax0819           20.69200         1.0    tempmax
+ tempmax0520           21.13600         1.0    tempmax
+ tempmax0620           21.85000         1.0    tempmax
+ tempmax0820           20.47100         1.0    tempmax
+ tempmax0521           20.99400         1.0    tempmax
+ tempmax0621           21.78000         1.0    tempmax
+ tempmax0821           20.25400         1.0    tempmax
+ tempmax0522           20.82200         1.0    tempmax
+ tempmax0622           21.63000         1.0    tempmax
+ tempmax0822           20.24800         1.0    tempmax
+ tempmax0523           20.60400         1.0    tempmax
+ tempmax0623           21.43000         1.0    tempmax
+ tempmax0823           20.28000         1.0    tempmax
+ phave0500             7.226250         1.0    phave
+ phave0600             6.900000         1.0    phave
+ phave0800             7.186250         1.0    phave
+ phave0501             7.205000         1.0    phave
+ phave0601             6.876250         1.0    phave
+ phave0801             7.170000         1.0    phave
+ phave0502             7.188750         1.0    phave
+ phave0602             6.856250         1.0    phave
+ phave0802             7.137500         1.0    phave
+ phave0503             7.172500         1.0    phave
+ phave0603             6.853750         1.0    phave
+ phave0803             7.118750         1.0    phave
+ phave0504             7.166250         1.0    phave
+ phave0604             6.842500         1.0    phave
+ phave0804             7.082500         1.0    phave
+ phave0505             7.161250         1.0    phave
+ phave0605             6.835000         1.0    phave
+ phave0805             7.078750         1.0    phave
+ phave0506             7.157500         1.0    phave
+ phave0606             6.830000         1.0    phave
+ phave0806             7.062500         1.0    phave
+ phave0507             7.171250         1.0    phave
+ phave0607             6.825000         1.0    phave
+ phave0807             7.050000         1.0    phave
+ phave0508             7.222500         1.0    phave
+ phave0608             6.832500         1.0    phave
+ phave0808             7.057500         1.0    phave
+ phave0509             7.295000         1.0    phave
+ phave0609             6.858750         1.0    phave
+ phave0809             7.073750         1.0    phave
+ phave0510             7.397500         1.0    phave
+ phave0610             6.892500         1.0    phave
+ phave0810             7.108750         1.0    phave
+ phave0511             7.475000         1.0    phave
+ phave0611             6.942500         1.0    phave
+ phave0811             7.147500         1.0    phave
+ phave0512             7.505000         1.0    phave
+ phave0612             6.992500         1.0    phave
+ phave0812             7.255000         1.0    phave
+ phave0513             7.610000         1.0    phave
+ phave0613             7.040000         1.0    phave
+ phave0813             7.345000         1.0    phave
+ phave0514             7.710000         1.0    phave
+ phave0614             7.082500         1.0    phave
+ phave0814             7.387500         1.0    phave
+ phave0515             7.770000         1.0    phave
+ phave0615             7.105000         1.0    phave
+ phave0815             7.440000         1.0    phave
+ phave0516             7.737500         1.0    phave
+ phave0616             7.115000         1.0    phave
+ phave0816             7.400000         1.0    phave
+ phave0517             7.647500         1.0    phave
+ phave0617             7.087500         1.0    phave
+ phave0817             7.390000         1.0    phave
+ phave0518             7.535000         1.0    phave
+ phave0618             7.065000         1.0    phave
+ phave0818             7.390000         1.0    phave
+ phave0519             7.425000         1.0    phave
+ phave0619             7.045000         1.0    phave
+ phave0819             7.377500         1.0    phave
+ phave0520             7.362500         1.0    phave
+ phave0620             7.012500         1.0    phave
+ phave0820             7.310000         1.0    phave
+ phave0521             7.317500         1.0    phave
+ phave0621             6.970000         1.0    phave
+ phave0821             7.265000         1.0    phave
+ phave0522             7.250000         1.0    phave
+ phave0622             6.935000         1.0    phave
+ phave0822             7.227500         1.0    phave
+ phave0523             7.237500         1.0    phave
+ phave0623             6.902500         1.0    phave
+ phave0823             7.202500         1.0    phave
+ phmin0500             7.200000         1.0    phmin
+ phmin0600             6.850000         1.0    phmin
+ phmin0800             7.160000         1.0    phmin
+ phmin0501             7.180000         1.0    phmin
+ phmin0601             6.840000         1.0    phmin
+ phmin0801             7.150000         1.0    phmin
+ phmin0502             7.170000         1.0    phmin
+ phmin0602             6.830000         1.0    phmin
+ phmin0802             7.130000         1.0    phmin
+ phmin0503             7.160000         1.0    phmin
+ phmin0603             6.830000         1.0    phmin
+ phmin0803             7.080000         1.0    phmin
+ phmin0504             7.160000         1.0    phmin
+ phmin0604             6.820000         1.0    phmin
+ phmin0804             7.030000         1.0    phmin
+ phmin0505             7.150000         1.0    phmin
+ phmin0605             6.820000         1.0    phmin
+ phmin0805             7.060000         1.0    phmin
+ phmin0506             7.150000         1.0    phmin
+ phmin0606             6.810000         1.0    phmin
+ phmin0806             7.050000         1.0    phmin
+ phmin0507             7.150000         1.0    phmin
+ phmin0607             6.810000         1.0    phmin
+ phmin0807             7.030000         1.0    phmin
+ phmin0508             7.190000         1.0    phmin
+ phmin0608             6.820000         1.0    phmin
+ phmin0808             7.040000         1.0    phmin
+ phmin0509             7.250000         1.0    phmin
+ phmin0609             6.840000         1.0    phmin
+ phmin0809             7.050000         1.0    phmin
+ phmin0510             7.340000         1.0    phmin
+ phmin0610             6.860000         1.0    phmin
+ phmin0810             7.040000         1.0    phmin
+ phmin0511             7.410000         1.0    phmin
+ phmin0611             6.920000         1.0    phmin
+ phmin0811             7.090000         1.0    phmin
+ phmin0512             7.460000         1.0    phmin
+ phmin0612             6.960000         1.0    phmin
+ phmin0812             7.220000         1.0    phmin
+ phmin0513             7.570000         1.0    phmin
+ phmin0613             7.020000         1.0    phmin
+ phmin0813             7.300000         1.0    phmin
+ phmin0514             7.680000         1.0    phmin
+ phmin0614             7.070000         1.0    phmin
+ phmin0814             7.360000         1.0    phmin
+ phmin0515             7.760000         1.0    phmin
+ phmin0615             7.100000         1.0    phmin
+ phmin0815             7.400000         1.0    phmin
+ phmin0516             7.710000         1.0    phmin
+ phmin0616             7.110000         1.0    phmin
+ phmin0816             7.370000         1.0    phmin
+ phmin0517             7.610000         1.0    phmin
+ phmin0617             7.070000         1.0    phmin
+ phmin0817             7.350000         1.0    phmin
+ phmin0518             7.490000         1.0    phmin
+ phmin0618             7.060000         1.0    phmin
+ phmin0818             7.370000         1.0    phmin
+ phmin0519             7.400000         1.0    phmin
+ phmin0619             7.030000         1.0    phmin
+ phmin0819             7.340000         1.0    phmin
+ phmin0520             7.340000         1.0    phmin
+ phmin0620             7.000000         1.0    phmin
+ phmin0820             7.290000         1.0    phmin
+ phmin0521             7.300000         1.0    phmin
+ phmin0621             6.960000         1.0    phmin
+ phmin0821             7.250000         1.0    phmin
+ phmin0522             7.240000         1.0    phmin
+ phmin0622             6.920000         1.0    phmin
+ phmin0822             7.200000         1.0    phmin
+ phmin0523             7.230000         1.0    phmin
+ phmin0623             6.890000         1.0    phmin
+ phmin0823             7.180000         1.0    phmin
+ phmax0500             7.240000         1.0    phmax
+ phmax0600             6.940000         1.0    phmax
+ phmax0800             7.230000         1.0    phmax
+ phmax0501             7.230000         1.0    phmax
+ phmax0601             6.910000         1.0    phmax
+ phmax0801             7.210000         1.0    phmax
+ phmax0502             7.200000         1.0    phmax
+ phmax0602             6.880000         1.0    phmax
+ phmax0802             7.150000         1.0    phmax
+ phmax0503             7.190000         1.0    phmax
+ phmax0603             6.880000         1.0    phmax
+ phmax0803             7.140000         1.0    phmax
+ phmax0504             7.170000         1.0    phmax
+ phmax0604             6.870000         1.0    phmax
+ phmax0804             7.110000         1.0    phmax
+ phmax0505             7.170000         1.0    phmax
+ phmax0605             6.850000         1.0    phmax
+ phmax0805             7.100000         1.0    phmax
+ phmax0506             7.160000         1.0    phmax
+ phmax0606             6.860000         1.0    phmax
+ phmax0806             7.080000         1.0    phmax
+ phmax0507             7.180000         1.0    phmax
+ phmax0607             6.840000         1.0    phmax
+ phmax0807             7.070000         1.0    phmax
+ phmax0508             7.270000         1.0    phmax
+ phmax0608             6.850000         1.0    phmax
+ phmax0808             7.080000         1.0    phmax
+ phmax0509             7.350000         1.0    phmax
+ phmax0609             6.880000         1.0    phmax
+ phmax0809             7.110000         1.0    phmax
+ phmax0510             7.470000         1.0    phmax
+ phmax0610             6.920000         1.0    phmax
+ phmax0810             7.150000         1.0    phmax
+ phmax0511             7.520000         1.0    phmax
+ phmax0611             6.970000         1.0    phmax
+ phmax0811             7.200000         1.0    phmax
+ phmax0512             7.550000         1.0    phmax
+ phmax0612             7.020000         1.0    phmax
+ phmax0812             7.300000         1.0    phmax
+ phmax0513             7.650000         1.0    phmax
+ phmax0613             7.060000         1.0    phmax
+ phmax0813             7.410000         1.0    phmax
+ phmax0514             7.750000         1.0    phmax
+ phmax0614             7.090000         1.0    phmax
+ phmax0814             7.410000         1.0    phmax
+ phmax0515             7.780000         1.0    phmax
+ phmax0615             7.110000         1.0    phmax
+ phmax0815             7.480000         1.0    phmax
+ phmax0516             7.760000         1.0    phmax
+ phmax0616             7.120000         1.0    phmax
+ phmax0816             7.440000         1.0    phmax
+ phmax0517             7.690000         1.0    phmax
+ phmax0617             7.100000         1.0    phmax
+ phmax0817             7.420000         1.0    phmax
+ phmax0518             7.590000         1.0    phmax
+ phmax0618             7.070000         1.0    phmax
+ phmax0818             7.430000         1.0    phmax
+ phmax0519             7.460000         1.0    phmax
+ phmax0619             7.060000         1.0    phmax
+ phmax0819             7.400000         1.0    phmax
+ phmax0520             7.380000         1.0    phmax
+ phmax0620             7.020000         1.0    phmax
+ phmax0820             7.340000         1.0    phmax
+ phmax0521             7.340000         1.0    phmax
+ phmax0621             6.980000         1.0    phmax
+ phmax0821             7.280000         1.0    phmax
+ phmax0522             7.270000         1.0    phmax
+ phmax0622             6.950000         1.0    phmax
+ phmax0822             7.250000         1.0    phmax
+ phmax0523             7.250000         1.0    phmax
+ phmax0623             6.910000         1.0    phmax
+ phmax0823             7.220000         1.0    phmax
+* model command line
+model.bat
+* model input/output
+UY_do.tpl   UY_do.q2k
+model.ins   model.out
