@@ -5,7 +5,7 @@
 # Dan Sobota, Oregon DEQ, sobota.daniel@deq.state.or.us
 
 # Define working directories and files----
-filePath <- "\\\\deqhq1\\tmdl\\TMDL_WR\\MidCoast\\Models\\Dissolved Oxygen\\Upper Yaquina River - 1710020401\\Upper Yaquina DO TMDL\\4. Modeling\\QUAL2Kw\\Model_Scenarios\\MOS\\"
+filePath <- "\\\\deqhq1\\tmdl\\TMDL_WR\\MidCoast\\Models\\Dissolved Oxygen\\Upper Yaquina River - 1710020401\\Upper Yaquina DO TMDL\\4. Modeling\\QUAL2Kw\\Model_Scenarios\\MOS\\R\\"
 output <- dir(path = filePath, pattern = ".out")
 
 # Read in file----
@@ -52,6 +52,3 @@ for (z in 1:length(tmp.list)) {
 
 # Give columns the appropriate names
 names(Q2K.df) <- header.nm
-
-# Write data file----
-save.image(file = "Q2K.Rdata")
