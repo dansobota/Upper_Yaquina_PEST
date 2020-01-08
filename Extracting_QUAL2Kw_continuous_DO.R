@@ -15,6 +15,8 @@ tmp.file <- scan(file = paste0(filePath, output), what = "character", sep = "\n"
 header.ln <- grep("^.*Diel water quality in the main channel.*$", tmp.file)[1]  # Make sure just part 1 is identified
 end.ln <- grep("^.*Diel water quality in the main channel.*$", tmp.file)[2]  # Part 2 is after the end of the data set
 
+# Process data into dataframe----
+
 # Column header names, split on two spaces, create char vect, then get rid of spaces
 header.nm <- gsub("(^+ )|( +$)",
                   "", 
@@ -25,11 +27,10 @@ header.nm <- gsub("(^+ )|( +$)",
                   )
 
 # Grab numeric data
-num.1st <- header.ln + 
-           min(grep("^.*[0-9]",
-           tmp.files[[j]][header.ln + 1:length(tmp.files[[j]])]))
+num.1st <- header.ln + 4
+end.num <- end.ln - 2
 
-tmp.data <- tmp.files[[j]][num.1st:length(tmp.files[[j]])]
+tmp.data <- tmp.file[num.1st:end.num]
 
 tmp.list <- list()
 
@@ -41,17 +42,16 @@ for (y in 1:length(tmp.data)) {
 }
 
 # Set blank data frame
-tmp.df <- data.frame(stringsAsFactors = F)
+Q2K.df <- data.frame(stringsAsFactors = F)
 
 # Build dataframe with rbind fill so that empty cells don't repeat
 for (z in 1:length(tmp.list)) {
-  tmp.df <- bind_rows(tmp.df, as.data.frame(tmp.list[[z]], 
-                                            stringsAsFactors = F))
+  Q2K.df <- rbind(Q2K.df, as.data.frame(tmp.list[[z]], 
+                  stringsAsFactors = F))
 }
 
 # Give columns the appropriate names
-names(tmp.df) <- header.nm
+names(Q2K.df) <- header.nm
 
-# Get data into numeric format except for time data
-tmp.df[,-which(names(tmp.df) == "Date_time")] <-
-  lapply(tmp.df[ , -which(names(tmp.df) == "Date_time")], as.numeric)
+# Write data file----
+save.image(file = "Q2K.Rdata")
