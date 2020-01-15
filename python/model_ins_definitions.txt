@@ -1,0 +1,43 @@
+Variable, Definition
+Shade01, hourly effective shade in Reach 1
+Shade02, hourly effective shade in Reach 2
+Shade03, hourly effective shade in Reach 3
+Shade04, hourly effective shade in Reach 4
+Shade05, hourly effective shade in Reach 5
+Shade06, hourly effective shade in Reach 6
+Shade07, hourly effective shade in Reach 7
+Shade08, hourly effective shade in Reach 7
+Sky01, Fraction sky opening Reach 1
+Sky02, Fraction sky opening Reach 2
+Sky03, Fraction sky opening Reach 3
+Sky04, Fraction sky opening Reach 4
+Sky05, Fraction sky opening Reach 5
+Sky06, Fraction sky opening Reach 6
+Sky07, Fraction sky opening Reach 7
+Sky08, Fraction sky opening Reach 8
+INORGP_UP, Upstream boundary inorganic P
+ORGP_UP, Upstream boundary organic P
+ORGP_GW1, Diffuse organic P input Reach 1
+ORGP_GW2, Diffuse organic P input Reach 2
+ORGP_GW3, Diffuse organic P input Reach 3
+ORGP_GW4, Diffuse organic P input Reach 4
+ORGP_GW5, Diffuse organic P input Reach 5
+ORGP_GW6, Diffuse organic P input Reach 6
+ORGP_GW7, Diffuse organic P input Reach 7
+ORGP_GW8, Diffuse organic P input Reach 8
+ORGP_GW1, Diffuse inorganic P input Reach 1
+ORGP_GW2, Diffuse inorganic P input Reach 2
+ORGP_GW3, Diffuse inorganic P input Reach 3
+ORGP_GW4, Diffuse inorganic P input Reach 4
+ORGP_GW5, Diffuse inorganic P input Reach 5
+ORGP_GW6, Diffuse inorganic P input Reach 6
+ORGP_GW7, Diffuse inorganic P input Reach 7
+ORGP_GW8, Diffuse inorganic P input Reach 8
+ORGP_T1, Organic P input from Buttermilk Creek, HSPF Reach 9
+ORGP_T2, Organic P input from Bales Creek, HSPF Reach 11
+ORGP_T3, Organic P input from Little Elk Creek, HSPF Reach 16
+ORGP_T4, Organic P input from Thorton Creek, HSPF Reach 19
+INORGP_T1, inorganic P input from Buttermilk Creek, HSPF Reach 9
+INORGP_T2, inorganic P input from Bales Creek, HSPF Reach 11
+INORGP_T3, inorganic P input from Little Elk Creek, HSPF Reach 16
+INORGP_T4, inorganic P input from Thorton Creek, HSPF Reach 19
