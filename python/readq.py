@@ -1,5 +1,5 @@
 ## input data
-str_path = 'C:/Users/kbranna/local_repos/pareto'
+str_path = '//deqhq1/tmdl/TMDL_WR/MidCoast/Models/Dissolved Oxygen/PEST-Synthetic-data/Upper_Yaquina_PEST/python'
 str_file_in = str_path + '/' + 'UY_do.out'
 str_ins_in = str_path + '/' + 'model_ins.txt'
 str_model_out = str_path + '/' + 'model.out'
