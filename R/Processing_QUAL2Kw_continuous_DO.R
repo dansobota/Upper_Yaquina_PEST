@@ -27,7 +27,7 @@ prob.meet <- 0.9
 meet.confid <- 0.9
 
 # p-values from the binomial test for each segment in the reach; p-values < 0.1 indicate non-attainment of standard
-Q2K.binom.results <- sapply(1:(length(unique(Q2K.df.num$Reach)) -1 ), 
+Q2K.binom.results <- sapply(1:(length(unique(Q2K.df.num$Reach)) -1), 
                            function(i) binom.test(x = sum(Q2K.df.num[Q2K.df.num$Reach == i, ]$MeetDO),
                                                   n = length(Q2K.df.num[Q2K.df.num$Reach == i, ]$MeetDO),
                                                   p = prob.meet,

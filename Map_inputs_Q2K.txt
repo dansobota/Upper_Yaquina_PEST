@@ -1,0 +1,21 @@
+Map of Input data to be manipulated for QUAL2Kw
+Dan Sobota, Oregon DEQ
+January 8, 2020
+File description
+\\deqhq1\tmdl\TMDL_WR\MidCoast\Models\Dissolved Oxygen\Upper Yaquina River - 1710020401\Upper Yaquina DO TMDL\4. Modeling\QUAL2Kw\Model_Scenarios\MOS\YA_2016-07-27_MOS.q2k
+Solar input manipulations
+Hourly shade estimates:
+Rows = 308:315
+Columns = 6:21
+Daily fraction of sky openness:
+Rows = 7:14
+Columns = 45
+Phosphorus inputs from upstream
+Rows = 283:284
+Columns = 1:24
+Phosphorus inputs from groundwater/unmodeled tributaries
+Rows = 129:130; 146:147; 163:164; 180:181; 197:198; 214:215; 231:232; 248:249
+Column = 1
+Phosphorus inputs from tributaries
+Rows = 60:61; 77:78; 94:95; 111:112
+Column = 1
