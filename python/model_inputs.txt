@@ -6,7 +6,7 @@ yes, Shade04, 311, 1-24
 yes, Shade05, 312, 1-24
 yes, Shade06, 313, 1-24
 yes, Shade07, 314, 1-24
-yes, Shade08, 309, 1-24
+yes, Shade08, 315, 1-24
 no, Sky01, 7, 45
 no, Sky02, 8, 45
 no, Sky03, 9, 45
